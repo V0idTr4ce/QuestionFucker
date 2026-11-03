@@ -1,0 +1,67 @@
+{
+  "app": {
+    "host": "127.0.0.1",
+    "port": 8765,
+    "python_executable": "",
+    "page_path": "QuestionFucker.html"
+  },
+  "question_bank": {
+    "path": "data/questions.js",
+    "sync_from": ""
+  },
+  "llama": {
+    "base_url": "http://127.0.0.1:8080",
+    "auto_start": true,
+    "accept_any_loaded_model": false,
+    "expected_model_keyword": "Qwen3-Coder-30B-A3B-Instruct",
+
+    "server_path": "",
+    "model_path": "",
+
+    "root_candidates": [
+      "D:/llama_cpp",
+      "D:/llama",
+      "C:/llama_cpp",
+      "C:/llama",
+      "E:/llama_cpp",
+      "E:/llama",
+      "../llama_cpp",
+      "./llama_cpp"
+    ],
+    "server_relative_paths": [
+      "build-cuda3/bin/Release/llama-server.exe",
+      "build-cuda/bin/Release/llama-server.exe",
+      "build/bin/Release/llama-server.exe",
+      "bin/llama-server.exe",
+      "llama-server.exe"
+    ],
+    "model_relative_paths": [
+      "models/Qwen3-Coder-30B-A3B-Instruct-Q4_K_S.gguf"
+    ],
+    "model_globs": [
+      "models/*Qwen*30B*A3B*.gguf",
+      "models/*.gguf",
+      "*.gguf"
+    ],
+
+    "fallback_port_end": 8090,
+    "gpu_layers": 20,
+    "context_size": 8192,
+    "threads": 8,
+    "parallel": 1,
+    "extra_server_args": [],
+
+    "runtime_library_dirs": [],
+    "start_timeout_seconds": 360,
+    "request_timeout_seconds": 300
+  },
+  "generation": {
+    "max_answer_tokens": 1200,
+    "temperature": 0.1,
+    "top_p": 0.9
+  },
+  "retrieval": {
+    "top_k": 6,
+    "reliable_match_threshold": 0.55
+  }
+}

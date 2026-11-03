@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>QuestionFucker</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            background: #f4f5f7;
+            color: #171a21;
+            font-family: system-ui, "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            font-size: 13px;
+            line-height: 1.45;
+        }
+
+        .top {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            padding: 7px;
+            background: #172033;
+            box-shadow: 0 2px 8px #0004;
+        }
+
+        .bar {
+            display: flex;
+        }
+
+        .search {
+            width: 100%;
+            height: 39px;
+            max-height: 92px;
+            resize: vertical;
+            border: 0;
+            border-radius: 7px;
+            padding: 8px 11px;
+            font: 15px/1.4 system-ui, "Microsoft YaHei", sans-serif;
+            outline: none;
+        }
+
+        .search:focus {
+            box-shadow: 0 0 0 2px #84adff inset;
+        }
+
+        .meta {
+            padding: 4px 2px;
+        }
+
+        .hint {
+            min-width: 0;
+            color: #cbd5e1;
+            font-size: 11px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .ai-row {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin-top: 3px;
+            padding-top: 5px;
+            border-top: 1px solid #ffffff20;
+        }
+
+        .ai-note {
+            min-width: 0;
+            flex: 1;
+            color: #94a3b8;
+            font-size: 11px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .ai-btn {
+            flex: none;
+            border: 0;
+            border-radius: 6px;
+            background: #2f6feb;
+            color: #fff;
+            font-weight: 700;
+            padding: 6px 10px;
+            cursor: pointer;
+        }
+
+        .ai-btn:hover {
+            background: #255cc5;
+        }
+
+        .ai-btn:disabled {
+            opacity: .6;
+            cursor: wait;
+        }
+
+        .ai-state {
+            flex: none;
+            color: #fbbf24;
+            font-size: 11px;
+        }
+
+        .ai-state.ready {
+            color: #6ee7b7;
+        }
+
+        .ai-state.busy {
+            color: #93c5fd;
+        }
+
+        .ai-panel {
+            margin: 6px 6px 0;
+            background: #fff;
+            border: 1px solid #b9c9ed;
+            border-radius: 7px;
+            box-shadow: 0 2px 7px #10204012;
+            overflow: hidden;
+        }
+
+        .ai-panel.hidden {
+            display: none;
+        }
+
+        .ai-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 6px 9px;
+            background: #eef4ff;
+            color: #234a9b;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .ai-answer {
+            padding: 9px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-size: 14px;
+        }
+
+        .ai-answer.error {
+            color: #b42318;
+        }
+
+        .ai-answer.loading {
+            color: #667085;
+        }
+
+        #results {
+            padding: 6px;
+            display: grid;
+            gap: 6px;
+        }
+
+        .q {
+            background: #fff;
+            border: 1px solid #dfe3ea;
+            border-radius: 7px;
+            padding: 8px 9px;
+            box-shadow: 0 1px 2px #1018280c;
+        }
+
+        .stem {
+            font-size: 14px;
+            font-weight: 650;
+            margin-bottom: 5px;
+            word-break: break-word;
+        }
+
+        .opts {
+            display: grid;
+            gap: 2px;
+        }
+
+        .opt {
+            padding: 2px 5px;
+            border-radius: 4px;
+            background: #f7f8fa;
+            word-break: break-word;
+        }
+
+        .ans {
+            margin-top: 6px;
+            padding: 5px 7px;
+            border-radius: 5px;
+            background: #e9f8ef;
+            color: #05603a;
+            font-weight: 700;
+            word-break: break-word;
+        }
+
+        .empty {
+            padding: 38px 12px;
+            text-align: center;
+            color: #7b8494;
+        }
+
+        mark {
+            background: #ffe58f;
+            border-radius: 2px;
+            padding: 0 1px;
+        }
+
+        @media (min-width:560px) {
+            body {
+                font-size: 14px;
+            }
+
+            .stem {
+                font-size: 15px;
+            }
+
+            .opts {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media print {
+            .top,
+            .ai-panel {
+                display: none;
+            }
+
+            #results {
+                padding: 0;
+            }
+
+            .q {
+                box-shadow: none;
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="bar">
+            <textarea id="search" class="search" rows="1" autocomplete="off" autofocus
+                placeholder="搜索本地题库……"></textarea>
+        </div>
+        <div class="meta">
+            <div id="hint" class="hint">输入即搜题；Esc 清空；不会自动调用AI</div>
+        </div>
+        <div class="ai-row">
+            <div class="ai-note">点击按钮询问AI</div>
+            <div id="aiState" class="ai-state">AI检测中</div>
+            <button id="askAI" class="ai-btn">开挂！</button>
+        </div>
+    </div>
+
+    <section id="aiPanel" class="ai-panel hidden">
+        <div class="ai-head"><span>AI 回答</span><span id="aiRoute"></span></div>
+        <div id="aiAnswer" class="ai-answer"></div>
+    </section>
+
+    <main id="results">
+        <div class="empty">输入关键词开始搜题</div>
+    </main>
+
+    <script src="data/questions.js"></script>
+    <script>
+        const DATA = window.QUESTION_BANK;
+        const LIMIT = 60;
+        const AI_API_CANDIDATES = Array.from({ length: 26 }, (_, i) => `http://127.0.0.1:${8765 + i}`);
+        const $ = x => document.getElementById(x);
+
+        let AI_API = AI_API_CANDIDATES[0];
+        let timer, aiReady = false, asking = false;
+
+        const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#39;'
+        }[c]));
+
+        const norm = s => String(s ?? '').toLowerCase().replace(/[\s（）()，。；：！？、.\-_/]+/g, '');
+
+        function keys() {
+            return $('search').value.trim().split(/\s+/).filter(Boolean);
+        }
+
+        function hi(s) {
+            let out = esc(s);
+            for (const k of keys().sort((a, b) => b.length - a.length)) {
+                const safe = esc(k).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                out = out.replace(new RegExp(safe, 'ig'), m => `<mark>${m}</mark>`);
+            }
+            return out;
+        }
+
+        function answerText(q) {
+            return q.answer.map(k => `${k}. ${q.options[k] ?? ''}`).join('；');
+        }
+
+        function render() {
+            const raw = $('search').value.trim();
+
+            if (!raw) {
+                $('results').innerHTML = '<div class="empty">输入关键词开始搜题</div>';
+                $('hint').textContent = '输入即搜题；Esc 清空；不会自动调用 AI';
+                return;
+            }
+
+            const ks = keys().map(norm);
+            const hits = [];
+
+            for (const q of DATA) {
+                const ans = answerText(q);
+                const hay = norm(
+                    q.stem + ' ' +
+                    Object.values(q.options).join(' ') + ' ' +
+                    q.answer.join(' ') + ' ' +
+                    ans
+                );
+                if (ks.every(k => hay.includes(k))) {
+                    hits.push(q);
+                    if (hits.length >= LIMIT) break;
+                }
+            }
+
+            $('hint').textContent = hits.length >= LIMIT
+                ? `至少命中 ${LIMIT} 题，仅显示前 ${LIMIT} 题`
+                : `本地题库命中 ${hits.length} 题`;
+
+            $('results').innerHTML = hits.length
+                ? hits.map(q =>
+                    '<article class="q">' +
+                        `<div class="stem">${hi(q.stem)}</div>` +
+                        '<div class="opts">' +
+                            Object.entries(q.options)
+                                .map(([k, v]) => `<div class="opt"><b>${k}.</b> ${hi(v)}</div>`)
+                                .join('') +
+                        '</div>' +
+                        `<div class="ans">答案：${hi(answerText(q))}</div>` +
+                    '</article>'
+                ).join('')
+                : '<div class="empty">本地题库没有找到；如需补充，请手动点击“开挂！”</div>';
+        }
+
+        function aiState(text, cls = '') {
+            $('aiState').textContent = text;
+            $('aiState').className = 'ai-state ' + cls;
+        }
+
+        async function checkAI() {
+            for (const base of AI_API_CANDIDATES) {
+                try {
+                    const r = await fetch(base + '/api/status', { cache: 'no-store' });
+                    if (!r.ok) continue;
+
+                    const s = await r.json();
+                    AI_API = base;
+                    aiReady = !!s.ready;
+                    aiState(
+                        aiReady ? 'AI就绪' : (s.phase === 'error' ? 'AI异常' : 'AI加载中'),
+                        aiReady ? 'ready' : (s.phase === 'error' ? '' : 'busy')
+                    );
+                    if (!aiReady && s.phase !== 'error') setTimeout(checkAI, 1800);
+                    return;
+                } catch (e) {
+                    // 该端口未响应，继续尝试下一个
+                }
+            }
+            aiReady = false;
+            aiState('AI未启动');
+            setTimeout(checkAI, 4000);
+        }
+
+        function showAI(text, route = '', cls = '') {
+            $('aiPanel').classList.remove('hidden');
+            $('aiAnswer').className = 'ai-answer ' + cls;
+            $('aiAnswer').textContent = text;
+            $('aiRoute').textContent = route;
+        }
+
+        async function askAI() {
+            const question = $('search').value.trim();
+
+            if (!question) {
+                showAI('请先输入或粘贴题目。', '', 'error');
+                return;
+            }
+            if (asking) return;
+
+            asking = true;
+            $('askAI').disabled = true;
+            $('askAI').textContent = '回答中';
+            showAI('正在检索本地题库并调用Qwen，请稍候……', '', 'loading');
+
+            try {
+                const r = await fetch(AI_API + '/api/ask', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question })
+                });
+
+                let data = {};
+                try {
+                    data = await r.json();
+                } catch (e) {
+                    // 响应不是 JSON，保持空对象
+                }
+
+                if (!r.ok) throw new Error(data.error || `HTTP ${r.status}`);
+                showAI(data.answer, data.route || '');
+            } catch (e) {
+                const guide = String(e.message).includes('Failed to fetch')
+                    ? 'AI服务尚未启动！”。'
+                    : e.message;
+                showAI('无法调用 AI：' + guide, '', 'error');
+                aiReady = false;
+                aiState('AI未启动');
+            } finally {
+                asking = false;
+                $('askAI').disabled = false;
+                $('askAI').textContent = '开挂！';
+            }
+        }
+
+        $('search').addEventListener('input', () => {
+            clearTimeout(timer);
+            timer = setTimeout(render, 50);
+        });
+
+        $('askAI').onclick = askAI;
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                $('search').value = '';
+                render();
+                $('aiPanel').classList.add('hidden');
+                $('search').focus();
+            }
+            if (e.key === '/' && document.activeElement !== $('search')) {
+                e.preventDefault();
+                $('search').focus();
+                $('search').select();
+            }
+        });
+
+        const initial = new URLSearchParams(location.search).get('q');
+        if (initial) $('search').value = initial;
+
+        render();
+        checkAI();
+    </script>
+</body>
+
+</html>
