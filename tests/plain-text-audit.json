@@ -1,0 +1,1925 @@
+﻿{
+  "count": 100,
+  "summary": {
+    "stem_only": {
+      "strong": 22,
+      "weak": 77,
+      "exact": 1
+    },
+    "multiline": {
+      "weak": 78,
+      "strong": 20,
+      "none": 1,
+      "exact": 1
+    },
+    "compact": {
+      "weak": 78,
+      "strong": 20,
+      "none": 1,
+      "exact": 1
+    }
+  },
+  "elapsed_seconds": 222.0,
+  "cases": [
+    {
+      "idx": 59,
+      "stem": "下列哪些属于常见 Web 应用漏洞？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.555,
+        "top_stem": "以下哪些属于常见的 Web 安全漏洞？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.546,
+        "top_stem": "以下哪些属于常见的 Web 安全漏洞？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.548,
+        "top_stem": "以下哪些属于常见的 Web 安全漏洞？"
+      }
+    },
+    {
+      "idx": 81,
+      "stem": "软件供应链的主要风险来源包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.534,
+        "top_stem": "软件供应链安全风险包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.515,
+        "top_stem": "软件供应链安全风险包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.515,
+        "top_stem": "软件供应链安全风险包括（ ）。"
+      }
+    },
+    {
+      "idx": 53,
+      "stem": "远程桌面协议 RDP 的默认端口号是？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.68,
+        "top_stem": "远程桌面协议RDP默认使用的端口是（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.642,
+        "top_stem": "远程桌面协议RDP默认使用的端口是（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.647,
+        "top_stem": "远程桌面协议RDP默认使用的端口是（ ）。"
+      }
+    },
+    {
+      "idx": 8,
+      "stem": "MD5 算法的输出摘要长度是多少位？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.763,
+        "top_stem": "MD5算法的输出摘要长度为（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.744,
+        "top_stem": "MD5算法的输出摘要长度为（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.755,
+        "top_stem": "MD5算法的输出摘要长度为（ ）。"
+      }
+    },
+    {
+      "idx": 96,
+      "stem": "关闭主机上不必要的服务与端口属于常见的安全加固措施。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.249,
+        "top_stem": "操作系统主机加固的常见措施包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.24,
+        "top_stem": "操作系统主机加固的常见措施包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.24,
+        "top_stem": "操作系统主机加固的常见措施包括（ ）。"
+      }
+    },
+    {
+      "idx": 67,
+      "stem": "防火墙的常见实现形态包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.411,
+        "top_stem": "防火墙的缺点不包括（）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.373,
+        "top_stem": "防火墙的缺点不包括（）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.373,
+        "top_stem": "防火墙的缺点不包括（）。"
+      }
+    },
+    {
+      "idx": 54,
+      "stem": "下列哪些属于对称加密算法？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.835,
+        "top_stem": "以下哪些属于对称加密算法？"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.812,
+        "top_stem": "以下哪些属于对称加密算法？"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.819,
+        "top_stem": "以下哪些属于对称加密算法？"
+      }
+    },
+    {
+      "idx": 78,
+      "stem": "蜜罐与蜜网的常见价值包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.212,
+        "top_stem": "蜜罐的典型优点有哪些？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.196,
+        "top_stem": "社会工程学攻击的常见形式包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.196,
+        "top_stem": "社会工程学攻击的常见形式包括（ ）。"
+      }
+    },
+    {
+      "idx": 25,
+      "stem": "经典的栈缓冲区溢出利用通常试图覆盖什么来劫持控制流？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.211,
+        "top_stem": "根据缓冲区溢出攻击的步骤，可将常用的缓冲区溢出攻击检测技术分为以下3 种类型，其中不包括（）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.203,
+        "top_stem": "PWN（二进制漏洞挖掘）中，\"栈溢出\" 攻击的核心目标是覆盖什么？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.203,
+        "top_stem": "PWN（二进制漏洞挖掘）中，\"栈溢出\" 攻击的核心目标是覆盖什么？"
+      }
+    },
+    {
+      "idx": 73,
+      "stem": "查询证书吊销状态的常用方式包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.248,
+        "top_stem": "常见的口令攻击方式包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.223,
+        "top_stem": "常见的口令攻击方式包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.227,
+        "top_stem": "常见的口令攻击方式包括（ ）。"
+      }
+    },
+    {
+      "idx": 4,
+      "stem": "RSA 算法的安全性主要依赖于哪一数学问题的困难性？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.518,
+        "top_stem": "RSA算法的安全性主要基于（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.498,
+        "top_stem": "RSA算法的安全性主要基于（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.498,
+        "top_stem": "RSA算法的安全性主要基于（ ）。"
+      }
+    },
+    {
+      "idx": 43,
+      "stem": "WAF 主要针对哪类风险提供防护？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.58,
+        "top_stem": "WAF 主要用于防护哪类攻击？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.532,
+        "top_stem": "WAF 主要用于防护哪类攻击？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.53,
+        "top_stem": "WAF 主要用于防护哪类攻击？"
+      }
+    },
+    {
+      "idx": 2,
+      "stem": "SM2 公钥密码算法基于哪类数学难题？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.411,
+        "top_stem": "下述（ ）密码算法与 SM2 算法使用相同的数学难题。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.363,
+        "top_stem": "下述（ ）密码算法与 SM2 算法使用相同的数学难题。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.363,
+        "top_stem": "下述（ ）密码算法与 SM2 算法使用相同的数学难题。"
+      }
+    },
+    {
+      "idx": 46,
+      "stem": "网络攻击事件应急响应中，抑制阶段的目的是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.316,
+        "top_stem": "网络安全事件应急响应PDCERF模型包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.291,
+        "top_stem": "网络安全事件应急响应PDCERF模型包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.291,
+        "top_stem": "网络安全事件应急响应PDCERF模型包括（ ）。"
+      }
+    },
+    {
+      "idx": 47,
+      "stem": "数字取证时应优先采集哪类数据？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.126,
+        "top_stem": "若扩展名为.docx的文件魔数却显示为MP3，应优先依据内容结构判断文件真实类型。"
+      },
+      "multiline": {
+        "category": "none",
+        "score": null,
+        "top_stem": null
+      },
+      "compact": {
+        "category": "none",
+        "score": null,
+        "top_stem": null
+      }
+    },
+    {
+      "idx": 34,
+      "stem": "《中华人民共和国个人信息保护法》正式施行的日期是？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.714,
+        "top_stem": "《中华人民共和国个人信息保护法》正式施行的时间是（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.8,
+        "top_stem": "《中华人民共和国个人信息保护法》正式施行的时间是（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.799,
+        "top_stem": "《中华人民共和国个人信息保护法》正式施行的时间是（ ）。"
+      }
+    },
+    {
+      "idx": 70,
+      "stem": "下列哪些属于恶意代码类型？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.497,
+        "top_stem": "常见的恶意代码类型包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.507,
+        "top_stem": "常见的恶意代码类型包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.507,
+        "top_stem": "常见的恶意代码类型包括（ ）。"
+      }
+    },
+    {
+      "idx": 22,
+      "stem": "文件上传功能的加固措施中，最推荐的做法是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.242,
+        "top_stem": "文件上传功能只要校验前端文件扩展名，即可保证安全。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.268,
+        "top_stem": "文件上传功能只要校验前端文件扩展名，即可保证安全。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.268,
+        "top_stem": "文件上传功能只要校验前端文件扩展名，即可保证安全。"
+      }
+    },
+    {
+      "idx": 12,
+      "stem": "SYN Flood 属于哪一类攻击？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.503,
+        "top_stem": "防御SYN Flood攻击的前提是要（）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.463,
+        "top_stem": "防御SYN Flood攻击的前提是要（）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.463,
+        "top_stem": "防御SYN Flood攻击的前提是要（）。"
+      }
+    },
+    {
+      "idx": 37,
+      "stem": "木马程序最典型的特征是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.35,
+        "top_stem": "foremost最典型的用途是？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.309,
+        "top_stem": "foremost最典型的用途是？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.309,
+        "top_stem": "foremost最典型的用途是？"
+      }
+    },
+    {
+      "idx": 66,
+      "stem": "下列哪些属于常见的 VPN 技术？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.416,
+        "top_stem": "以下哪些是 VPN 技术的主要功能？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.43,
+        "top_stem": "常用的VPN实现技术/协议包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.421,
+        "top_stem": "常用的VPN实现技术/协议包括（ ）。"
+      }
+    },
+    {
+      "idx": 1,
+      "stem": "SM4 算法的分组长度和密钥长度分别是多少？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.811,
+        "top_stem": "SM4分组密码算法的分组长度和密钥长度分别是多少？"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.882,
+        "top_stem": "SM4分组密码算法的分组长度和密钥长度分别是多少？"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.887,
+        "top_stem": "SM4分组密码算法的分组长度和密钥长度分别是多少？"
+      }
+    },
+    {
+      "idx": 87,
+      "stem": "网站部署了 HTTPS 之后就不会再存在 XSS 漏洞。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.255,
+        "top_stem": "HTTPS 是一种加密的（）协议。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.244,
+        "top_stem": "HTTPS 是一种加密的（）协议。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.244,
+        "top_stem": "HTTPS 是一种加密的（）协议。"
+      }
+    },
+    {
+      "idx": 30,
+      "stem": "纵深防御的核心思想是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.362,
+        "top_stem": "零信任安全的核心思想包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.324,
+        "top_stem": "零信任安全的核心思想包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.324,
+        "top_stem": "零信任安全的核心思想包括（ ）。"
+      }
+    },
+    {
+      "idx": 93,
+      "stem": "进行内存取证时应当先将计算机关机再采集内存。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.174,
+        "top_stem": "手机非运行内存指的是"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.169,
+        "top_stem": "手机非运行内存指的是"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.169,
+        "top_stem": "手机非运行内存指的是"
+      }
+    },
+    {
+      "idx": 97,
+      "stem": "SM4 是一种对称分组密码算法，其分组长度和密钥长度均为 128 位。",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.6,
+        "top_stem": "SM4分组密码算法的分组长度和密钥长度分别为（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.587,
+        "top_stem": "SM4分组密码算法的分组长度和密钥长度分别为（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.587,
+        "top_stem": "SM4分组密码算法的分组长度和密钥长度分别为（ ）。"
+      }
+    },
+    {
+      "idx": 40,
+      "stem": "僵尸网络中受害主机通常通过什么与控制端通信？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.221,
+        "top_stem": "僵尸网络的主要特征是分布性、恶意传播和一对多控制。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.2,
+        "top_stem": "僵尸网络的主要特征是分布性、恶意传播和一对多控制。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.201,
+        "top_stem": "僵尸网络的主要特征是分布性、恶意传播和一对多控制。"
+      }
+    },
+    {
+      "idx": 76,
+      "stem": "常见的访问控制模型包括？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.748,
+        "top_stem": "常见的访问控制模型有（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.825,
+        "top_stem": "常见的访问控制模型有（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.826,
+        "top_stem": "常见的访问控制模型有（ ）。"
+      }
+    },
+    {
+      "idx": 85,
+      "stem": "对称加密体制在实践中需要解决的主要问题是密钥的安全分发与管理。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.224,
+        "top_stem": "对称加密算法与非对称加密算法的主要区别是？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.218,
+        "top_stem": "对称加密算法与非对称加密算法的主要区别是？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.218,
+        "top_stem": "对称加密算法与非对称加密算法的主要区别是？"
+      }
+    },
+    {
+      "idx": 86,
+      "stem": "数字签名使用私钥产生签名，使用对应公钥进行验证。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.413,
+        "top_stem": "SM9 数字签名算法签名者使用主私钥生成签名，验证者使用主公钥进行验证。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.404,
+        "top_stem": "SM9 数字签名算法签名者使用主私钥生成签名，验证者使用主公钥进行验证。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.404,
+        "top_stem": "SM9 数字签名算法签名者使用主私钥生成签名，验证者使用主公钥进行验证。"
+      }
+    },
+    {
+      "idx": 27,
+      "stem": "DEP 机制限制的是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.178,
+        "top_stem": "下列选项中不属于公钥密码体制的是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.154,
+        "top_stem": "在以下几种标准中，定义 CSMA／CA 机制的是"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.154,
+        "top_stem": "在以下几种标准中，定义 CSMA／CA 机制的是"
+      }
+    },
+    {
+      "idx": 32,
+      "stem": "《中华人民共和国网络安全法》正式施行的日期是？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.697,
+        "top_stem": "《中华人民共和国网络安全法》正式施行的时间是（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.791,
+        "top_stem": "《中华人民共和国网络安全法》正式施行的时间是（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.795,
+        "top_stem": "《中华人民共和国网络安全法》正式施行的时间是（ ）。"
+      }
+    },
+    {
+      "idx": 51,
+      "stem": "OAuth 2.0 协议主要解决的问题是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.228,
+        "top_stem": "Telnet的主要安全问题是？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.212,
+        "top_stem": "Telnet的主要安全问题是？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.211,
+        "top_stem": "Telnet的主要安全问题是？"
+      }
+    },
+    {
+      "idx": 95,
+      "stem": "多因素认证允许把两个不同口令作为两个认证因素。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.367,
+        "top_stem": "多因素认证比单一口令更安全( )。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.355,
+        "top_stem": "多因素认证比单一口令更安全( )。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.355,
+        "top_stem": "多因素认证比单一口令更安全( )。"
+      }
+    },
+    {
+      "idx": 72,
+      "stem": "内存取证通常可以获取哪些信息？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.246,
+        "top_stem": "文件雕刻通常依赖哪些信息？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.228,
+        "top_stem": "文件雕刻通常依赖哪些信息？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.228,
+        "top_stem": "文件雕刻通常依赖哪些信息？"
+      }
+    },
+    {
+      "idx": 36,
+      "stem": "蠕虫与普通计算机病毒的关键区别是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.441,
+        "top_stem": "蠕虫和传统计算机病毒的区别主要体现在"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.401,
+        "top_stem": "蠕虫和传统计算机病毒的区别主要体现在"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.401,
+        "top_stem": "蠕虫和传统计算机病毒的区别主要体现在"
+      }
+    },
+    {
+      "idx": 69,
+      "stem": "《网络安全法》确立的主要制度包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.348,
+        "top_stem": "网络安全等级保护制度的主要环节包括哪些( )。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.389,
+        "top_stem": "网络安全等级保护制度的主要环节包括哪些( )。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.389,
+        "top_stem": "网络安全等级保护制度的主要环节包括哪些( )。"
+      }
+    },
+    {
+      "idx": 89,
+      "stem": "只要强制复杂的口令策略，就能完全消除弱口令带来的风险。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.195,
+        "top_stem": "弱口令漏洞属于( )。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.191,
+        "top_stem": "弱口令漏洞属于( )。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.191,
+        "top_stem": "弱口令漏洞属于( )。"
+      }
+    },
+    {
+      "idx": 9,
+      "stem": "TLS 1.3 相比早期版本，在密钥交换上不再支持哪类做法？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.249,
+        "top_stem": "SM2 算法中的密钥交换算法支持（ ）方密钥交换。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.287,
+        "top_stem": "SM2 算法中的密钥交换算法支持（ ）方密钥交换。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.289,
+        "top_stem": "SM2 算法中的密钥交换算法支持（ ）方密钥交换。"
+      }
+    },
+    {
+      "idx": 92,
+      "stem": "等级保护第三级系统一般需要每年开展一次等级测评。",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.632,
+        "top_stem": "网络安全等级保护三级系统原则上应每年至少开展一次等级测评。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.616,
+        "top_stem": "网络安全等级保护三级系统原则上应每年至少开展一次等级测评。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.616,
+        "top_stem": "网络安全等级保护三级系统原则上应每年至少开展一次等级测评。"
+      }
+    },
+    {
+      "idx": 24,
+      "stem": "防范 SSRF 的关键校验点是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.333,
+        "top_stem": "SSRF的防御措施包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.321,
+        "top_stem": "SSRF的防御措施包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.321,
+        "top_stem": "SSRF的防御措施包括（ ）。"
+      }
+    },
+    {
+      "idx": 56,
+      "stem": "下列哪些属于密码杂凑（哈希）算法？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.348,
+        "top_stem": "以下哪些属于对称加密算法？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.334,
+        "top_stem": "以下哪些属于对称加密算法？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.344,
+        "top_stem": "以下哪些属于对称加密算法？"
+      }
+    },
+    {
+      "idx": 44,
+      "stem": "蜜罐系统最核心的价值是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.316,
+        "top_stem": "系统审计日志主要价值是( )。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.286,
+        "top_stem": "系统审计日志主要价值是( )。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.286,
+        "top_stem": "系统审计日志主要价值是( )。"
+      }
+    },
+    {
+      "idx": 82,
+      "stem": "代码安全审计中重点关注的高危点有？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.224,
+        "top_stem": "网络安全审计的审计对象不包括（）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.202,
+        "top_stem": "网络安全审计的审计对象不包括（）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.202,
+        "top_stem": "网络安全审计的审计对象不包括（）。"
+      }
+    },
+    {
+      "idx": 68,
+      "stem": "等级保护 2.0 的保护对象可以包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.497,
+        "top_stem": "网络安全等级保护2.0将保护对象划分为（ ）个等级。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.441,
+        "top_stem": "网络安全等级保护2.0将保护对象划分为（ ）个等级。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.441,
+        "top_stem": "网络安全等级保护2.0将保护对象划分为（ ）个等级。"
+      }
+    },
+    {
+      "idx": 58,
+      "stem": "PKI 体系的常见组成部分包括？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.638,
+        "top_stem": "PKI体系通常包括哪些组成部分( )。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.585,
+        "top_stem": "PKI体系通常包括哪些组成部分( )。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.583,
+        "top_stem": "PKI体系通常包括哪些组成部分( )。"
+      }
+    },
+    {
+      "idx": 65,
+      "stem": "下列哪些属于相对安全的无线局域网防护方案？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.362,
+        "top_stem": "无线局域网安全协议包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.395,
+        "top_stem": "无线局域网安全协议包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.389,
+        "top_stem": "无线局域网安全协议包括（ ）。"
+      }
+    },
+    {
+      "idx": 10,
+      "stem": "HTTPS 默认使用的端口号是？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.655,
+        "top_stem": "HTTPS协议默认使用的端口是（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.675,
+        "top_stem": "HTTPS协议默认使用的端口是（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.671,
+        "top_stem": "HTTPS协议默认使用的端口是（ ）。"
+      }
+    },
+    {
+      "idx": 75,
+      "stem": "信息安全风险的基本构成要素包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.397,
+        "top_stem": "信息安全的基本属性包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.367,
+        "top_stem": "信息安全的基本属性包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.367,
+        "top_stem": "信息安全的基本属性包括（ ）。"
+      }
+    },
+    {
+      "idx": 90,
+      "stem": "最小权限原则可以降低系统被攻陷后造成的损害范围。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.344,
+        "top_stem": "最小权限原则的含义是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.335,
+        "top_stem": "最小权限原则的含义是（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.335,
+        "top_stem": "最小权限原则的含义是（ ）。"
+      }
+    },
+    {
+      "idx": 52,
+      "stem": "Kerberos 鉴别协议依赖的主要密码学基础是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.366,
+        "top_stem": "Kerberos 的常见默认端口是 88。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.321,
+        "top_stem": "Kerberos 的常见默认端口是 88。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.321,
+        "top_stem": "Kerberos 的常见默认端口是 88。"
+      }
+    },
+    {
+      "idx": 38,
+      "stem": "勒索软件造成的主要危害是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.392,
+        "top_stem": "XSS（跨站脚本攻击）的主要危害是？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.353,
+        "top_stem": "XSS（跨站脚本攻击）的主要危害是？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.353,
+        "top_stem": "XSS（跨站脚本攻击）的主要危害是？"
+      }
+    },
+    {
+      "idx": 64,
+      "stem": "下列哪些可以用于保障传输过程安全？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.181,
+        "top_stem": "单向杂凑函数可以用于以下哪些方面（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.185,
+        "top_stem": "SSL/TLS 协议主要用于保障浏览器与服务器之间的通信安全（HTTPS）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.186,
+        "top_stem": "SSL/TLS 协议主要用于保障浏览器与服务器之间的通信安全（HTTPS）。"
+      }
+    },
+    {
+      "idx": 33,
+      "stem": "《中华人民共和国数据安全法》正式施行的日期是？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.689,
+        "top_stem": "《中华人民共和国数据安全法》正式施行的时间是（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.807,
+        "top_stem": "《中华人民共和国数据安全法》正式施行的时间是（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.809,
+        "top_stem": "《中华人民共和国数据安全法》正式施行的时间是（ ）。"
+      }
+    },
+    {
+      "idx": 55,
+      "stem": "下列哪些属于非对称加密算法？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.729,
+        "top_stem": "下列属于非对称加密算法的有（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.712,
+        "top_stem": "下列属于非对称加密算法的有（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.717,
+        "top_stem": "下列属于非对称加密算法的有（ ）。"
+      }
+    },
+    {
+      "idx": 60,
+      "stem": "防范 XSS 的措施包括？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.587,
+        "top_stem": "XSS的防御措施包括（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.618,
+        "top_stem": "XSS的防御措施包括（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.615,
+        "top_stem": "XSS的防御措施包括（ ）。"
+      }
+    },
+    {
+      "idx": 29,
+      "stem": "最小权限原则的含义是？",
+      "stem_only": {
+        "category": "exact",
+        "score": 1.0,
+        "top_stem": "最小权限原则的含义是（ ）。"
+      },
+      "multiline": {
+        "category": "exact",
+        "score": 1.0,
+        "top_stem": "最小权限原则的含义是（ ）。"
+      },
+      "compact": {
+        "category": "exact",
+        "score": 1.0,
+        "top_stem": "最小权限原则的含义是（ ）。"
+      }
+    },
+    {
+      "idx": 61,
+      "stem": "防范 SQL 注入的工程措施包括？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.595,
+        "top_stem": "SQL注入的防御措施包括（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.595,
+        "top_stem": "SQL注入的防御措施包括（ ）。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.595,
+        "top_stem": "SQL注入的防御措施包括（ ）。"
+      }
+    },
+    {
+      "idx": 21,
+      "stem": "越权漏洞按照访问主体关系一般分为？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.164,
+        "top_stem": "计算机漏洞可以按照（）以及严重程度分类。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.217,
+        "top_stem": "水平越权是指（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.217,
+        "top_stem": "水平越权是指（ ）。"
+      }
+    },
+    {
+      "idx": 19,
+      "stem": "存储型 XSS 的典型特征是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.37,
+        "top_stem": "下列关于“Host头注入、IDOR、反射型XSS、存储型XSS”的术语—含义配对，哪些正确？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.319,
+        "top_stem": "下列关于“Host头注入、IDOR、反射型XSS、存储型XSS”的术语—含义配对，哪些正确？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.319,
+        "top_stem": "下列关于“Host头注入、IDOR、反射型XSS、存储型XSS”的术语—含义配对，哪些正确？"
+      }
+    },
+    {
+      "idx": 26,
+      "stem": "ASLR 机制的作用是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.275,
+        "top_stem": "VLAN的主要作用是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.253,
+        "top_stem": "VLAN的主要作用是（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.253,
+        "top_stem": "VLAN的主要作用是（ ）。"
+      }
+    },
+    {
+      "idx": 15,
+      "stem": "ICMP 协议在网络中的主要用途是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.338,
+        "top_stem": "Linux 中 `/tmp` 的主要用途是？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.313,
+        "top_stem": "Linux 中 `/tmp` 的主要用途是？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.313,
+        "top_stem": "Linux 中 `/tmp` 的主要用途是？"
+      }
+    },
+    {
+      "idx": 48,
+      "stem": "对称密码体制在工程应用中最主要的问题是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.26,
+        "top_stem": "非对称密码体制也称公钥密码体制，即所有的密钥都是公开的。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.236,
+        "top_stem": "非对称密码体制也称公钥密码体制，即所有的密钥都是公开的。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.236,
+        "top_stem": "非对称密码体制也称公钥密码体制，即所有的密钥都是公开的。"
+      }
+    },
+    {
+      "idx": 20,
+      "stem": "防范 CSRF 的常用手段是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.39,
+        "top_stem": "CSRF的防御措施包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.42,
+        "top_stem": "CSRF的防御措施包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.419,
+        "top_stem": "CSRF的防御措施包括（ ）。"
+      }
+    },
+    {
+      "idx": 77,
+      "stem": "对口令加盐可以带来哪些作用？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.277,
+        "top_stem": "对口令哈希进行加盐（salt）处理，可以有效增加彩虹表攻击的难度。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.273,
+        "top_stem": "对口令哈希进行加盐（salt）处理，可以有效增加彩虹表攻击的难度。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.273,
+        "top_stem": "对口令哈希进行加盐（salt）处理，可以有效增加彩虹表攻击的难度。"
+      }
+    },
+    {
+      "idx": 41,
+      "stem": "Rootkit 的主要作用是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.417,
+        "top_stem": "NAT技术的主要作用是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.376,
+        "top_stem": "NAT技术的主要作用是（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.376,
+        "top_stem": "NAT技术的主要作用是（ ）。"
+      }
+    },
+    {
+      "idx": 39,
+      "stem": "APT 攻击的典型特征是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.413,
+        "top_stem": "以下哪些是高级持续性威胁（APT）的典型特点？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.385,
+        "top_stem": "以下哪些是高级持续性威胁（APT）的典型特点？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.387,
+        "top_stem": "以下哪些是高级持续性威胁（APT）的典型特点？"
+      }
+    },
+    {
+      "idx": 84,
+      "stem": "哈希算法的输出无法还原出原文，因此适合用于口令存储但必须配合加盐。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.311,
+        "top_stem": "哈希函数是可逆的，可以由摘要还原出原文。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.305,
+        "top_stem": "哈希函数是可逆的，可以由摘要还原出原文。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.305,
+        "top_stem": "哈希函数是可逆的，可以由摘要还原出原文。"
+      }
+    },
+    {
+      "idx": 31,
+      "stem": "网络安全等级保护 2.0 共划分几个安全保护等级？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.607,
+        "top_stem": "网络安全等级保护2.0将保护对象划分为（ ）个等级。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.556,
+        "top_stem": "网络安全等级保护2.0将保护对象划分为（ ）个等级。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.556,
+        "top_stem": "网络安全等级保护2.0将保护对象划分为（ ）个等级。"
+      }
+    },
+    {
+      "idx": 99,
+      "stem": "在 PKI 体系中，用于判断服务器证书链是否可信的信任起点是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.299,
+        "top_stem": "PKI体系通常包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.28,
+        "top_stem": "PKI体系通常包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.281,
+        "top_stem": "PKI体系通常包括（ ）。"
+      }
+    },
+    {
+      "idx": 74,
+      "stem": "一条合格的安全审计日志通常应包含？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.238,
+        "top_stem": "系统审计日志主要价值是( )。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.221,
+        "top_stem": "系统审计日志主要价值是( )。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.221,
+        "top_stem": "系统审计日志主要价值是( )。"
+      }
+    },
+    {
+      "idx": 80,
+      "stem": "安全开发生命周期 SDL 中常见的安全活动包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.342,
+        "top_stem": "证书的生命周期包括以下哪些（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.305,
+        "top_stem": "证书的生命周期包括以下哪些（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.305,
+        "top_stem": "证书的生命周期包括以下哪些（ ）。"
+      }
+    },
+    {
+      "idx": 23,
+      "stem": "修复目录遍历漏洞的根本办法是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.247,
+        "top_stem": "SQL注入漏洞产生的根本原因是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.238,
+        "top_stem": "SQL注入漏洞产生的根本原因是（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.238,
+        "top_stem": "SQL注入漏洞产生的根本原因是（ ）。"
+      }
+    },
+    {
+      "idx": 63,
+      "stem": "存户口令时正确的做法包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.249,
+        "top_stem": "某团队实现 ZUC 时的错误做法包括（ ）"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.225,
+        "top_stem": "某团队实现 ZUC 时的错误做法包括（ ）"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.225,
+        "top_stem": "某团队实现 ZUC 时的错误做法包括（ ）"
+      }
+    },
+    {
+      "idx": 13,
+      "stem": "ARP 欺骗攻击主要发生在哪一层？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.515,
+        "top_stem": "ARP 欺骗攻击的主要原理是？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.477,
+        "top_stem": "ARP 欺骗攻击的主要原理是？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.477,
+        "top_stem": "ARP 欺骗攻击的主要原理是？"
+      }
+    },
+    {
+      "idx": 49,
+      "stem": "数字证书一般由谁签发？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.368,
+        "top_stem": "数字证书由 CA 机构签发，用（ ）来验证证书。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.347,
+        "top_stem": "数字证书由 CA 机构签发，用（ ）来验证证书。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.347,
+        "top_stem": "数字证书由 CA 机构签发，用（ ）来验证证书。"
+      }
+    },
+    {
+      "idx": 91,
+      "stem": "蠕虫不需要依附宿主文件即可在网络中自主传播。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.331,
+        "top_stem": "下列哪个术语与这一描述相匹配：可不依附宿主文件，主动通过网络自我复制传播？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.319,
+        "top_stem": "下列哪个术语与这一描述相匹配：可不依附宿主文件，主动通过网络自我复制传播？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.319,
+        "top_stem": "下列哪个术语与这一描述相匹配：可不依附宿主文件，主动通过网络自我复制传播？"
+      }
+    },
+    {
+      "idx": 45,
+      "stem": "《网络安全法》要求网络日志留存不少于多长时间？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.591,
+        "top_stem": "我国《网络安全法》要求网络运营者留存网络日志不少于（ ）。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.573,
+        "top_stem": "《网络安全法》要求网络运营者留存网络日志不少于六个月。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.573,
+        "top_stem": "《网络安全法》要求网络运营者留存网络日志不少于六个月。"
+      }
+    },
+    {
+      "idx": 3,
+      "stem": "SM9 算法的特点是采用哪种身份体系？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.462,
+        "top_stem": "（ ）是 SM9 密码算法的特点。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.43,
+        "top_stem": "（ ）是 SM9 密码算法的特点。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.43,
+        "top_stem": "（ ）是 SM9 密码算法的特点。"
+      }
+    },
+    {
+      "idx": 0,
+      "stem": "SM3 密码杂凑算法的输出摘要长度是多少位？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.704,
+        "top_stem": "SM3密码杂凑算法的摘要长度是？"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.714,
+        "top_stem": "SM3密码杂凑算法的摘要长度是？"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.717,
+        "top_stem": "SM3密码杂凑算法的摘要长度是？"
+      }
+    },
+    {
+      "idx": 17,
+      "stem": "DNS 服务常用的默认端口号是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.41,
+        "top_stem": "DNS协议默认端口( )。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.399,
+        "top_stem": "DNS 的常见默认端口是 53。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.4,
+        "top_stem": "DNS协议默认端口( )。"
+      }
+    },
+    {
+      "idx": 79,
+      "stem": "下列哪些属于需要重点管控的高风险服务端口？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.25,
+        "top_stem": "在我国网络安全等级保护制度中，哪一级起属于需要重点监督保护的较高等级？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.219,
+        "top_stem": "在我国网络安全等级保护制度中，哪一级起属于需要重点监督保护的较高等级？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.222,
+        "top_stem": "在我国网络安全等级保护制度中，哪一级起属于需要重点监督保护的较高等级？"
+      }
+    },
+    {
+      "idx": 98,
+      "stem": "APT 攻击通常追求短期快速获利，不需要长期隐蔽潜伏。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.157,
+        "top_stem": "以下哪些是高级持续性威胁（APT）的典型特点？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.15,
+        "top_stem": "以下哪些是高级持续性威胁（APT）的典型特点？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.15,
+        "top_stem": "以下哪些是高级持续性威胁（APT）的典型特点？"
+      }
+    },
+    {
+      "idx": 62,
+      "stem": "身份认证的三个基本要素包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.25,
+        "top_stem": "（）可以提高无线网络身份认证的安全性。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.217,
+        "top_stem": "（）可以提高无线网络身份认证的安全性。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.217,
+        "top_stem": "（）可以提高无线网络身份认证的安全性。"
+      }
+    },
+    {
+      "idx": 71,
+      "stem": "应急响应的典型阶段包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.316,
+        "top_stem": "应急响应PDCERF模型中，第一个阶段是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.3,
+        "top_stem": "应急响应PDCERF模型中，第一个阶段是（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.3,
+        "top_stem": "应急响应PDCERF模型中，第一个阶段是（ ）。"
+      }
+    },
+    {
+      "idx": 57,
+      "stem": "一张典型的服务器数字证书通常包含哪些内容？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.764,
+        "top_stem": "数字证书通常包含哪些内容( )。"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.718,
+        "top_stem": "数字证书通常包含哪些内容( )。"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.718,
+        "top_stem": "数字证书通常包含哪些内容( )。"
+      }
+    },
+    {
+      "idx": 18,
+      "stem": "防范 SQL 注入最直接有效的编码层措施是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.34,
+        "top_stem": "SQL注入的防御措施包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.341,
+        "top_stem": "SQL注入的防御措施包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.342,
+        "top_stem": "SQL注入的防御措施包括（ ）。"
+      }
+    },
+    {
+      "idx": 16,
+      "stem": "SSH 服务默认监听的端口号是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.444,
+        "top_stem": "SSH协议默认使用的端口是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.45,
+        "top_stem": "SSH协议默认使用的端口是（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.445,
+        "top_stem": "SSH协议默认使用的端口是（ ）。"
+      }
+    },
+    {
+      "idx": 35,
+      "stem": "等级保护第三级系统一般需要多久开展一次测评？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.439,
+        "top_stem": "网络安全等级保护三级系统原则上应每年至少开展一次等级测评。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.414,
+        "top_stem": "网络安全等级保护三级系统原则上应每年至少开展一次等级测评。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.414,
+        "top_stem": "网络安全等级保护三级系统原则上应每年至少开展一次等级测评。"
+      }
+    },
+    {
+      "idx": 42,
+      "stem": "IDS 与 IPS 的核心区别是？",
+      "stem_only": {
+        "category": "strong",
+        "score": 0.648,
+        "top_stem": "在传统部署方式下，IDS 与 IPS 的主要区别是？"
+      },
+      "multiline": {
+        "category": "strong",
+        "score": 0.615,
+        "top_stem": "在传统部署方式下，IDS 与 IPS 的主要区别是？"
+      },
+      "compact": {
+        "category": "strong",
+        "score": 0.591,
+        "top_stem": "在传统部署方式下，IDS 与 IPS 的主要区别是？"
+      }
+    },
+    {
+      "idx": 28,
+      "stem": "本地提权通常指的是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.294,
+        "top_stem": "\"智能体\"（Agent）在人工智能领域通常指的是？"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.246,
+        "top_stem": "\"智能体\"（Agent）在人工智能领域通常指的是？"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.246,
+        "top_stem": "\"智能体\"（Agent）在人工智能领域通常指的是？"
+      }
+    },
+    {
+      "idx": 83,
+      "stem": "安全事件中及时隔离受影响主机的作用包括？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.332,
+        "top_stem": "NAT的作用包括哪些( )。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.297,
+        "top_stem": "NAT的作用包括哪些( )。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.297,
+        "top_stem": "NAT的作用包括哪些( )。"
+      }
+    },
+    {
+      "idx": 6,
+      "stem": "数字签名最主要提供的安全属性是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.522,
+        "top_stem": "数字签名能够提供，而消息认证码无法提供的安全属性是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.478,
+        "top_stem": "数字签名能够提供，而消息认证码无法提供的安全属性是（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.478,
+        "top_stem": "数字签名能够提供，而消息认证码无法提供的安全属性是（ ）。"
+      }
+    },
+    {
+      "idx": 5,
+      "stem": "在相同安全强度下，ECC 与 RSA 的密钥长度关系是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.228,
+        "top_stem": "在相同的硬件平台和软件环境下，相同密钥长度的 RSA 在加密时硬件实现速 度比 DES 快。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.207,
+        "top_stem": "在相同的硬件平台和软件环境下，相同密钥长度的 RSA 在加密时硬件实现速 度比 DES 快。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.211,
+        "top_stem": "在相同的硬件平台和软件环境下，相同密钥长度的 RSA 在加密时硬件实现速 度比 DES 快。"
+      }
+    },
+    {
+      "idx": 88,
+      "stem": "使用参数化查询可以从根本上避免 SQL 注入。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.549,
+        "top_stem": "使用参数化查询（预编译）可以有效防御SQL注入。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.526,
+        "top_stem": "使用参数化查询（预编译）可以有效防御SQL注入。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.526,
+        "top_stem": "使用参数化查询（预编译）可以有效防御SQL注入。"
+      }
+    },
+    {
+      "idx": 7,
+      "stem": "哈希函数的抗碰撞性指的是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.418,
+        "top_stem": "哈希函数的安全特性包括（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.34,
+        "top_stem": "哈希函数的安全特性包括（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.34,
+        "top_stem": "哈希函数的安全特性包括（ ）。"
+      }
+    },
+    {
+      "idx": 50,
+      "stem": "CRL 的作用是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.304,
+        "top_stem": "VLAN的主要作用是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.274,
+        "top_stem": "VLAN的主要作用是（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.274,
+        "top_stem": "VLAN的主要作用是（ ）。"
+      }
+    },
+    {
+      "idx": 14,
+      "stem": "DNS 缓存投毒攻击的直接目标是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.235,
+        "top_stem": "VPN的主要安全目标是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.211,
+        "top_stem": "VPN的主要安全目标是（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.211,
+        "top_stem": "VPN的主要安全目标是（ ）。"
+      }
+    },
+    {
+      "idx": 94,
+      "stem": "安全审计日志可以随时删除以节省磁盘空间。",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.208,
+        "top_stem": "系统审计日志主要价值是( )。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.202,
+        "top_stem": "系统审计日志主要价值是( )。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.202,
+        "top_stem": "系统审计日志主要价值是( )。"
+      }
+    },
+    {
+      "idx": 11,
+      "stem": "TCP 三次握手的主要目的是？",
+      "stem_only": {
+        "category": "weak",
+        "score": 0.538,
+        "top_stem": "TCP建立连接采用三次握手，其主要目的是（ ）。"
+      },
+      "multiline": {
+        "category": "weak",
+        "score": 0.512,
+        "top_stem": "TCP建立连接采用三次握手，其主要目的是（ ）。"
+      },
+      "compact": {
+        "category": "weak",
+        "score": 0.512,
+        "top_stem": "TCP建立连接采用三次握手，其主要目的是（ ）。"
+      }
+    }
+  ]
+}

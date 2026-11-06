@@ -353,6 +353,8 @@ class Handler(BaseHTTPRequestHandler):
         path = self.path.split("?", 1)[0]
         if path in ("/", ""):
             requested = PAGE_FILE
+        elif path == "/data/questions.js" and QUESTION_FILE.suffix.lower() == ".js":
+            requested = QUESTION_FILE
         else:
             requested = (STATIC / path.lstrip("/")).resolve()
             if STATIC.resolve() not in requested.parents and requested != STATIC.resolve():

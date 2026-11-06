@@ -293,6 +293,14 @@
             return $('search').value.trim().split(/\s+/).filter(Boolean);
         }
 
+        function pastedStem(text) {
+            const a = /(^|[^A-Za-z0-9])(?:A|Ａ)[.、．:：)）]/.exec(text);
+            if (!a) return '';
+            const start = a.index + a[1].length;
+            const rest = text.slice(a.index + a[0].length);
+            return /(?:B|Ｂ)[.、．:：)）]/.test(rest) ? text.slice(0, start).trim() : '';
+        }
+
         function hi(s) {
             let out = esc(s);
             for (const k of keys().sort((a, b) => b.length - a.length)) {
@@ -306,6 +314,13 @@
             return q.answer.map(k => `${k}. ${q.options[k] ?? ''}`).join('；');
         }
 
+        function bigrams(text) {
+            const s = norm(text), parts = new Set();
+            for (let i = 0; i + 1 < s.length; i++) parts.add(s.slice(i, i + 2));
+            return parts;
+        }
+        const stemIndex = DATA.map(q => bigrams(q.stem));
+
         function render() {
             const raw = $('search').value.trim();
 
@@ -317,6 +332,7 @@
 
             const ks = keys().map(norm);
             const hits = [];
+            let similar = false;
 
             for (const q of DATA) {
                 const ans = answerText(q);
@@ -332,7 +348,37 @@
                 }
             }
 
-            $('hint').textContent = hits.length >= LIMIT
+            // 粘贴整题时，题库选项顺序可能不同；无完整匹配时用题干重试。
+            const stem = pastedStem(raw);
+            if (!hits.length && stem && norm(stem).length >= 8) {
+                const needle = norm(stem);
+                for (const q of DATA) {
+                    if (norm(q.stem).includes(needle)) {
+                        hits.push(q);
+                        if (hits.length >= LIMIT) break;
+                    }
+                }
+            }
+
+            // 没有字面匹配时，按题干二字片段找相似题；结果仅供人工核对。
+            if (!hits.length) {
+                const needle = norm(stem || raw);
+                if (needle.length >= 8) {
+                    const queryParts = bigrams(needle);
+                    const candidates = [];
+                    stemIndex.forEach((parts, i) => {
+                        let shared = 0;
+                        for (const part of queryParts) if (parts.has(part)) shared++;
+                        const score = (2 * shared) / (queryParts.size + parts.size || 1);
+                        if (score >= 0.35) candidates.push({q: DATA[i], score});
+                    });
+                    candidates.sort((a, b) => b.score - a.score);
+                    hits.push(...candidates.slice(0, LIMIT).map(x => x.q));
+                    similar = hits.length > 0;
+                }
+            }
+
+            $('hint').textContent = similar ? `找到 ${hits.length} 道相似题，请核对题意和选项` : hits.length >= LIMIT
                 ? `至少命中 ${LIMIT} 题，仅显示前 ${LIMIT} 题`
                 : `本地题库命中 ${hits.length} 题`;
 

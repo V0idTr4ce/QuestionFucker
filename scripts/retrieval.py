@@ -16,9 +16,14 @@ def normalize(text: str) -> str:
 
 
 def head_of_question(text: str) -> str:
-    # 用户粘贴完整选项时，优先拿第一项选项之前的部分与题干比较。
-    parts = re.split(r"(?:^|\s)[A-Ha-h][\.、．:：\)）]\s*", text, maxsplit=1)
-    return parts[0].strip() or text.strip()
+    # 同时兼容换行、空格和紧贴题干的选项；至少识别到 A、B 两个标记
+    # 才拆分，避免将单独的 A.、域名或缩写误认为完整选项区。
+    first = re.search(r"(?<![A-Za-z0-9])(?:A|Ａ)[\.、．:：\)）]", text)
+    if first and re.search(r"(?:B|Ｂ)[\.、．:：\)）]", text[first.end():]):
+        head = text[:first.start()].strip()
+        if head:
+            return head
+    return text.strip()
 
 
 def terms(text: str) -> list[str]:
@@ -69,6 +74,8 @@ class QuestionBank:
         self.path = path
         self.questions = load_questions(path)
         self.doc_terms: list[Counter[str]] = []
+        self.stem_terms: list[Counter[str]] = []
+        self.stem_norms: list[str] = []
         document_frequency: defaultdict[str, int] = defaultdict(int)
         for q in self.questions:
             stem = q.get("stem", "")
@@ -76,6 +83,8 @@ class QuestionBank:
             # 题干重复一遍，让题干比干扰选项权重更高。
             counts = Counter(terms(stem + " " + stem + " " + options))
             self.doc_terms.append(counts)
+            self.stem_terms.append(Counter(terms(stem)))
+            self.stem_norms.append(normalize(stem))
             for token in counts:
                 document_frequency[token] += 1
         n = max(1, len(self.questions))
@@ -92,23 +101,22 @@ class QuestionBank:
         query_norm = normalize(query_text)
         head_norm = normalize(head_of_question(query_text))
         query_terms = Counter(terms(query_text))
+        head_terms = Counter(terms(head_of_question(query_text)))
         scored: list[Match] = []
         for i, q in enumerate(self.questions):
             stem = q.get("stem", "")
-            stem_norm = normalize(stem)
+            stem_norm = self.stem_norms[i]
             if not stem_norm:
                 continue
-            exact = bool(
-                query_norm == stem_norm
-                or (len(stem_norm) >= 8 and stem_norm in query_norm)
-                or (len(head_norm) >= 8 and (head_norm in stem_norm or stem_norm in head_norm))
-            )
+            # 子串相同不代表题意一致（例如限定条件、否定词不同）。
+            exact = bool(query_norm == stem_norm or head_norm == stem_norm)
             if exact:
                 score = 1.0
             else:
                 cosine = self._cosine(query_terms, self.doc_terms[i])
+                stem_cosine = self._cosine(head_terms, self.stem_terms[i])
                 ratio = SequenceMatcher(None, head_norm, stem_norm, autojunk=False).ratio() if head_norm else 0.0
-                score = min(0.99, 0.72 * cosine + 0.28 * ratio)
+                score = min(0.99, 0.45 * stem_cosine + 0.30 * cosine + 0.25 * ratio)
             if score >= 0.12:
                 scored.append(Match(score=score, exact=exact, question=q))
         scored.sort(key=lambda x: (x.score, x.exact), reverse=True)
